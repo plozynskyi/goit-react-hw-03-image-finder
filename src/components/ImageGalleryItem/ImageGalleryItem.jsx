@@ -21,7 +21,6 @@ ImageGalleryItem.defaultProps = {
 
 ImageGalleryItem.propTypes = {
   openModal: PropTypes.func.isRequired,
-  id: PropTypes.number,
   smallImage: PropTypes.string.isRequired,
   bigImage: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,

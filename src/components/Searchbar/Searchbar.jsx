@@ -1,4 +1,7 @@
 import { Component } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
   SearchbarHeader,
   SearchForm,
@@ -21,6 +24,9 @@ class Searchbar extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    if (this.state.searchQuery.trim() === '') {
+      return toast.warn('Please enter what you are looking for');
+    }
     const { onSubmit } = this.props;
     onSubmit({ ...this.state });
     this.reset();

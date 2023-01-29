@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 *,
@@ -16,8 +16,6 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   color: #212121;
   background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
